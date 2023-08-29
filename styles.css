@@ -1,0 +1,295 @@
+/* Apply a gradient background */
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    background: #EDE9E9; /* Replace with your desired gradient colors */
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and logo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EDE9E9; /* Background for the header */
+    padding: 3px 3px;
+}
+
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px; /* Adjust margin as needed */
+    max-width: 80px;
+}
+.logo img {
+    
+    max-width: 80px; /* Adjust the size as needed */
+    height: auto;
+}
+.title {
+    text-align: left;
+    margin: 10;
+    max-width: 100px;
+    margin-right: 10px; 
+    font-size: 18px; 
+    color: #333; 
+}
+/* .nothing {
+    width: 750px;
+} */
+@media (max-width: 2024px) {
+    .nothing{
+        /* width: 750px; */
+        flex-basis: 100%; /* Take up full width on smaller screens */
+    }
+}
+
+/* Dashboard layout */
+.dashboard {
+    display: flex;
+}
+
+.navigation {
+    position: relative;
+    margin-left: -6px;
+    width: 200px;
+    /* background-color: #333; */
+    color: black;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.navigation a:hover {
+    background-color: white;
+}
+
+/* Styling navigation links */
+.navigation a {
+    margin-bottom: 10px; 
+    display: flex; /* Display as flex to align items properly */
+    align-items: center; /* Align text and image vertically */
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+ 
+.navigation img {
+    width: 20px; /* Adjust the image size as needed */
+    height: 20px;
+    margin-right: 10px; /* Add spacing between image and text */
+}
+ 
+
+/* Need Help Box */
+
+.need-help-box {
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    font-size: 10px;
+    width: 150px;
+    padding: 10px;
+    background-color: #3a3b3b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.need-help-box p {
+    margin: 0;
+    /* font-weight: bold; */
+}
+
+.need-help-box button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #099797;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.need-help-box button:hover {
+    background-color: #555;
+}
+
+/* Search Bar */
+
+/* Styling for search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.search-input {
+    padding: 5px 30px 5px 10px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url('search_icon.png'); /* Replace with your search icon image */
+    background-repeat: no-repeat;
+    background-position: 95% center; /* Adjust the position of the icon */
+    background-size: 20px; /* Adjust the size of the icon */
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-clear-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
+    appearance: none;
+}
+
+/* Optional: Style on focus */
+.search-input:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for sign-in link */
+
+.sign-in-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 12px; /* Adjust margin as needed */
+}
+
+.sign-in-link .profile_icon {
+    font-size: 20px; /* Adjust icon size as needed */
+    margin-left: 0; /* Adjust margin between text and icon */
+}
+
+/* Optional: Style on hover */
+.sign-in-link:hover {
+    text-decoration: underline;
+}
+
+/* Styling for notification link */
+
+.notification-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.notification-icon {
+    font-size: 18px; /* Adjust icon size as needed */
+    margin-left: 5px; /* Adjust margin between icon and text */
+    /* color: #FF0000; */
+}
+/* Optional: Style on hover */
+/* .sign-in-link:hover, .notification-link:hover {
+    text-decoration: underline;
+} */
+
+/* +++++++++++++++++++++ Content  ++++++++++++++++++++++++ */
+.content {
+    flex-grow: 1;
+    padding-top: 0px;
+    padding-left:30px;
+    
+}
+
+.stati {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px;
+}
+.stati_sub {
+    flex-basis: calc(25% - 10px);
+    height: 60px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-right: 0px;
+    background-color: white;
+    /* color: white; */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ui_dashbord{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px;
+    padding-top: 25px;
+}
+
+.ui{
+    border: none;
+    border-radius: 10px;
+    height:200px;
+    background-color: white;
+}
+.cycles{
+    width: 60%;
+}
+
+
+.description{
+     width: 38%;
+}
+
+.overview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px;
+    padding-top: 25px;
+}
+.over{
+    border: none;
+    border-radius: 10px;
+    height:380px;
+    background-color: white;
+}
+.display{
+    
+    width: 38%;
+}
+.context{
+    width: 60%;
+}
+
+.order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px;
+    padding-top: 25px;
+}
+.project{
+    border: none;
+    border-radius: 10px;
+    height:80px;
+    background-color: white;
+}
+.review{
+    
+    width: 60%;
+}
+.review1{
+    width: 38%;
+}
+
